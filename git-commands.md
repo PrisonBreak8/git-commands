@@ -477,7 +477,61 @@ git branch <branch name> <id commit>
 ## 3.11 Git – Ветки – История переключений веток: лог ссылок reflog
 [Подробнее здесь](https://www.youtube.com/watch?v=FxyGx_XTRhA&list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb&index=21)
 
+Восстановить удаленную ветку если мы не знаем идентификатор коммита нам поможет **reflog**
+```
+cat .git/logs/HEAD
+```
+Для красивого вывода **reflog**
+```
+git reflog 
+```
+```
+git reflog <branch name>
+```
+Добавит к **reflog** вывод даты. **iso**=формат даты
+```
+git reflog --date=iso
+```
+-
 
+## 4.1 Git – Удаление "лишних" файлов и незакоммиченных изменений
+[Подробнее здесь](https://www.youtube.com/watch?v=h9kYvAQoXjo&list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb&index=22)
+
+ Это удобный метод удаления неотслеживаемых файлов в рабочем каталоге репозитория . Неотслеживаемые файлы — это файлы, которые находятся в каталоге репозитория, но еще не были добавлены в индекс репозитория с помощью git add.
+```
+git clean -dxf
+```
+-
+
+## 5.1 Git – Reset – Жесткий reset --hard: отмена изменений, удаление коммитов
+[Подробнее здесь](https://www.youtube.com/watch?v=DMncFUqzDuM&list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb&index=23)
+
+**git reset** — это мощная команда, используемая для отмены локальных изменений в репозитории Git.
+```
+git reset
+```
+-
+
+## 5.2 Git – Reset – Мягкий reset --soft: замена и объединение коммитов
+[Подробнее здесь](https://www.youtube.com/watch?v=bUdLmdSMm7E&list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb&index=24)
+
+**git reset --soft**  Вообще не трогает индексный файл или рабочее дерево (но сбрасывает заголовок в commit , как и все режимы). · **--hard**. Сбрасывает.
+```
+git reset --soft
+```
+-
+
+## 5.3 Git – Reset – Правка последнего коммита: commit **--amend**
+[Подробнее здесь](https://www.youtube.com/watch?v=Hho9WBgWil0&list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb&index=25)
+
+**git commit --amend** — удобный способ изменить самый последний коммит . Он позволяет комбинировать поэтапные изменения с предыдущим коммитом вместо создания совершенно нового коммита. Его также можно использовать для простого редактирования предыдущего сообщения о фиксации без изменения его снимка.
+```
+git commit --amend -m <commit...>
+```
+-
+
+## 5.4 Git – Reset – Смешанный reset (без флагов), сравнение видов reset
+[Подробнее здесь](https://www.youtube.com/watch?v=r1oUTfqKXac&list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb&index=26)
 
 ## СЛИЯНИЯ ВЕТОК
 
@@ -532,39 +586,6 @@ git pull
 ```
 git push
 ```
-
-
-
-<!--[Подробнее здесь]()-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## To Be Continued...
 
