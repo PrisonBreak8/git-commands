@@ -94,11 +94,6 @@ git config user.email
 ```
 git help config
 ```
-#### Preview
-<p align="center">
-    <img src="https://github.com/PrisonBreak8/git-commands/blob/main/assets/ways.png" alt="пути настроек" width="800" height="250">
-</p>
-
 -
 
 ## 2.2 Git – Основы – Создание репозитория, первый коммит
