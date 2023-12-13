@@ -528,6 +528,11 @@ git commit --amend -m <commit...>
 ## 5.4 Git – Reset – Смешанный reset (без флагов), сравнение видов reset
 [Подробнее здесь](https://www.youtube.com/watch?v=r1oUTfqKXac&list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb&index=26)
 
+-
+
+## 5.5 Git – Reset – Таблица с действиями reset
+[Подробнее здесь](https://www.youtube.com/watch?v=hb-x1SJB43s&list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb&index=27)
+
 ## СЛИЯНИЯ ВЕТОК
 
 Слияние ветки (feature branch) в текущую ветку (receiving branch). Т.е указываем название ветки, которую хотим слить с текущей веткой. Для этого нужно перейти в ту ветку и находясь в ней произвести команду:
